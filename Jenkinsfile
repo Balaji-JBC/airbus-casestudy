@@ -18,6 +18,6 @@ pipeline {
   environment {
     ECR_ID = '142198642907.dkr.ecr.ap-northeast-3.amazonaws.com'
     CALCULATION_SERVICE_IMAGE = 'balaji-v2-casestudy-calculation-service'
-    ECR_CREDENTIALS = 'credentials('ecr-credentials')'
+    ECR_CREDENTIALS = credentials('ecr-credentials')
   }
 }
